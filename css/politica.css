@@ -20,7 +20,7 @@ a {
 }
 .container__title {
     color: white;
-    margin-top: 5%;
+    margin-top: 50%;
     margin-bottom: 30px;
     font-size: 50px;
 }
@@ -67,6 +67,6 @@ a {
 }
 @media  screen and (max-width: 540px) {
     body {
-        height: 280vh;
+        height: 300vh;
     }
 }
