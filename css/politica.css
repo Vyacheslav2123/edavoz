@@ -18,9 +18,9 @@ a {
     align-items: center;
     flex-direction: column;
 }
-.container__title {
+.logo {
     color: white;
-    margin-top: 50%;
+    margin-top: 5%;
     margin-bottom: 30px;
     font-size: 50px;
 }
@@ -55,4 +55,22 @@ a {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
+.telegram {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.telegram-logo {
+    width: 45px;
+    height: 45px;
+}
+@media  screen and (max-width: 512px) {
+    .logo {
+        font-size: 32px;
+        margin-top: 25%;
+    }
+    .content--politica {
+        border: none;
+    }
+}
