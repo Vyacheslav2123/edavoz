@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    height: 100%;
+    min-height: 100vh;
     background: url(../img/fone.png) center no-repeat;
     background-size: cover;
     font-family: 'Montserrat';
@@ -55,18 +55,4 @@ a {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-@media screen and (max-width: 855px){
-    body {
-        height: 200vh;
-    }
-}
-@media  screen and (max-width: 590px) {
-    body {
-        height: 230vh;
-    }
-}
-@media  screen and (max-width: 540px) {
-    body {
-        height: 300vh;
-    }
-}
+
