@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    background: url(../img/fone.png) center no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat';
+}
+a {
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container__title {
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.content--politica {
+    max-width: 800px;
+    margin: 0px auto;
+    font-family: Arial;
+    padding: 20px 40px 40px 40px;
+    border: 1px solid #DADADA;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.container__content--title {
+    color: #3B6A7C;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.container__content--subtitle {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.container__content--text {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+@media screen and (max-width: 855px){
+    body {
+        height: 200vh;
+    }
+}
+@media  screen and (max-width: 590px) {
+    body {
+        height: 230vh;
+    }
+}
+@media  screen and (max-width: 540px) {
+    body {
+        height: 280vh;
+    }
+}
