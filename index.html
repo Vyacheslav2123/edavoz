@@ -80,6 +80,17 @@
             </form>
         </div>
     </div>
+    <div class="mod-cookiebar" id="cookie">
+        <p class="mod-cookiebar__text">
+            Продолжая использовать сайт, 
+            вы даете согласие на использование 
+            нами файлов cookie, с целью сбора 
+            статистики посещаемости сайта и персонализации 
+            предложений с учетом ваших интересов. 
+            <a href="./politica.html">Политика конфиденциальности</a>
+        </p>
+        <button type="button" onclick="cook()" class="mod-cookiebar__btn">Принять</button>
+    </div>
     <footer class="footer">
         <h3 class="footer__title">edavoz.info</h3>
         <div class="telegram">
@@ -89,5 +100,10 @@
             <a href="./politica.html" class="footer__politics--btn">Политика конфиденциальности</h4>
         </div>
     </footer>
+    <script>
+        function cook() {
+            document.getElementById("cookie").className = "mod-cookiebar__disable";
+        }
+    </script>
 </body>
 </html>

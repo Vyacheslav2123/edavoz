@@ -114,7 +114,6 @@ option {
 }
 .form-row__submit--btn:hover {
     background-color: #e2cb18;
-
 }
 .footer {
     display: flex;
@@ -199,7 +198,46 @@ option {
         margin-top: -30px;
     }
 }
+.mod-cookiebar {
+    height: 100px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1070;
+    width: 100%;
+    padding: 12px;
+    background-color: #e6f8ca;
+    text-align: center;
+}
+.mod-cookiebar__btn {
+    background-color: #FCE000;
+    border-radius: 16px;
+    width: 130px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    transition: .3s all;
+    margin-top: 20px;
+}
+.mod-cookiebar__btn:hover {
+    background-color: #e2cb18;
+}
+.mod-cookiebar__disable {
+    display: none;
+}
+@media  screen and (max-width: 980px) {
+    .mod-cookiebar {
+        height: 150px;
+
+    }
+}
+
 @media  screen and (max-width: 580px) {
+    .mod-cookiebar {
+        height: 180px;
+    }
     .form-row_info {
         width: 390px;
         margin-bottom: 2px;
