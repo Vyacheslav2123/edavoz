@@ -13,14 +13,71 @@
         <a href="/"><h1 class="logo">ЕДАВОЗ</h1></a>
         <h3 class="container__subtitle">Сервис по доставке еды</h3>
         <div class="container__content">
-            <form action="success.html" class="container__info">
-                <input type="email" class="container__info--email" name="email" placeholder="Email" />
-                <button type="submit" class="container__info--btn">Отправить</button>
+            <form action="test.php" class="container__form">
+                    <div class="form-row">
+                        <div class="form-row__container">
+                            <input type="text" class="form-row_info" placeholder="Как Вас зовут? *" />
+                            <small class="form-row_text">Фамилия и имя полностью</small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row__container">
+                            <input type="text" class="form-row_info" placeholder="Название ресторана*" />
+                            <br><br>
+                        </div>
+                        <div class="form-row__container">
+                            <select class="form-row_info">
+                                <option disabled="true" selected="true">Ресторан уже доставляет заказы? *</option>
+                                <option value="Да">Да</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                            <small class="form-row_text">Своими силами или другими сервисами доставки</small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row__container">
+                            <input type="text" class="form-row_info" placeholder="Гоpoд *" />
+                            <small class="form-row_text">Где находится Ваш ресторан</small>
+                        </div>
+                        <div class="form-row__container">
+                            <input type="text" class="form-row_info" placeholder="Aдpeс peсторана *" />
+                            <br>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row__container">
+                            <input type="text" class="form-row_info" placeholder="Телефон *" />
+                            <small class="form-row_text">Для связи после того, как вы заполните заявку</small>
+                        </div>
+                        <div class="form-row__container">
+                            <input type="text" class="form-row_info" placeholder="Электpoнная почта *" />
+                            <small class="form-row_text">Для связи после того, как вы заполните заявку</small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row__container">
+                            <select class="form-row_info">
+                                <option disabled="true" selected="true">Сотрудничаете с Яндекс.Едой? *</option>
+                                    <option value="Yes">Да</option>
+                                    <option value="No">Нет</option>
+                            </select>
+                            <small class="form-row_text">Сотрудничаете ли вы с Яндекс.Едой по текущему или другим проектам?</small>
+                        </div>
+                        <div class="form-row__container">
+                            <input type="text" class="form-row_info" placeholder="ИНН юр. лица *" />
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="accept">
+                       <input type="checkbox" class="accept-input"/> 
+                       <span class="paragraph small pl-25 mb-80" style="color:#838383; word-wrap:break-word;">
+                        Соглашаюсь на обработку моих данных на условиях <a href="./politica.html" target="_blank">Политики конфиденциальности</a>.
+                    </span>
+                    </div>
+                    <div class="form-row__submit">
+                        <button class="form-row__submit--btn">отправить</button>
+                    </div>
             </form>
-            <div class="collab">
-                <a href="./data.html" class="collab__btn">Заполните данные 
-                о вашей компании для начала сотрудничества с вами</a>
-            </div>
         </div>
     </div>
     <footer class="footer">

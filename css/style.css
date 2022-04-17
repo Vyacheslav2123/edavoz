@@ -25,7 +25,6 @@ a {
     font-size: 50px;
 }
 .container__content {
-    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,49 +35,86 @@ a {
     font-size: 18px;
     margin-bottom: 15px;
 }
-.container__info {
-    display: flex;
-    justify-content: center;
+.container__form {
     margin-top: 50px;
-    flex-wrap: wrap;
+    margin-bottom: 30px;
     padding: 0 10px;
 }
-.container__info--email {
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.form-row_info {
+    background-image: none !important;
+    border-color: #ececec;
+    background-color: #ececec;
+    margin: 0px 10px;
+    padding: 0 10px;
     width: 250px;
     height: 45px;
     border-radius: 30px;
     border: solid 1px #ccc;
-    padding: 0 10px;
-    font-size: 18px;
+    font-size: 17px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
-.container__info--btn {
-    width: 200px;
-    height: 45px;
-    border-radius: 30px;
-    font-size: 18px;
-    border: none;
-    background-color: #000;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    transition: .3s all;
+option {
+    color: -internal-light-dark(rgb(170, 170, 170));
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
 }
-.container__info--btn:hover {
-    border: solid 2px white;
-    color: white;
-    background-color: transparent;
-}
-.collab {
+.form-row__container {
     display: flex;
-    justify-content: end;
-    align-items: center;
+    flex-direction: column;
 }
-.collab__btn {
-    width: 200px;
-    text-align: center;
-    margin-top: 10px;
+.form-row_text {
+    width: 300px;
+    display: block;
+    color: white;
+
+}
+.accept {
+    padding-left: 25px;
+    position: relative;
+    min-width: 0%;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    color: #120f09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accept-input {
+    margin-right: 5px;
+}
+.form-row__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+.form-row__submit--btn {
+    background-color: #FCE000;
+    border-radius: 16px;
+    width: 138px;
+    height: 49px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    transition: .3s all ;
+}
+.form-row__submit--btn:hover {
+    background-color: #e2cb18;
+
 }
 .footer {
     display: flex;
@@ -136,6 +172,44 @@ a {
     width: 45px;
     height: 45px;
 }
+@media  screen and (max-width: 644px) {
+    .form-row {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .form-row__container {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-row_text {
+        width: 80%;
+        text-align: center;
+    }
+    .form-row_info {
+        width: 500px;
+        margin-right: 0px;
+    }
+
+}
+@media  screen and (max-width: 580px) {
+    .form-row_info {
+        width: 300px;
+        margin-bottom: 5px;
+    }
+    .form-row_text {
+        width: 80%;
+        text-align: center;
+    }
+    .form-row__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
 @media  screen and (max-width: 512px) {
     .footer {
         margin-top: 100px;
@@ -149,18 +223,20 @@ a {
     .container__subtitle {
         font-size: 14px;
     }
-    .container__info--email {
-        width: 200px;
-        height: 30px;
-    }
-    .container__info--btn {
-        width: 150px;
-        height: 30px;
-    }
     .footer__title {
         font-size: 18px;
     }
     .footer__politics--btn {
         font-size: 7px;
+    }
+    .form-row {
+        justify-content: center;
+    }
+    .container__form {
+        margin: 0;
+    }
+    .form-row_info {
+        width: 200px;
+        height: 30px;
     }
 }
