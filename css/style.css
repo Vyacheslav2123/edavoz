@@ -235,15 +235,22 @@ option {
 }
 
 @media  screen and (max-width: 580px) {
+    .form-row {
+        margin: 0 0;
+    }
+    .accept {
+        margin-top: 30px;
+    }
     .mod-cookiebar {
         height: 180px;
     }
     .form-row_info {
-        width: 390px;
+        width: 250px;
+        height: 25px;
         margin-bottom: 2px;
     }
     .form-row_text {
-        width: 80%;
+        width: 60%;
         text-align: center;
     }
     .form-row__container {
@@ -255,12 +262,14 @@ option {
 }
 @media  screen and (max-width: 512px) {
     .form-row_info {
-        width: 300px;
-        height: 30px;
+        width: 200px;
+        height: 20px;
         margin-bottom: 5px;
+        font-size: 15px;
     }
     .form-row_text {
-        width: 80%;
+        font-size: 11px;
+        width: 60%;
         text-align: center;
     }
     .form-row__container {
@@ -270,7 +279,7 @@ option {
         margin-bottom: 20px;
     }
     .footer {
-        margin-top: 100px;
+        margin-top: 40px;
     }
     .footer__politics {
         margin-top: 20px;

@@ -9,11 +9,22 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="mod-cookiebar" id="cookie">
+        <p class="mod-cookiebar__text">
+            Продолжая использовать сайт, 
+            вы даете согласие на использование 
+            нами файлов cookie, с целью сбора 
+            статистики посещаемости сайта и персонализации 
+            предложений с учетом ваших интересов. 
+            <a href="./politica.html">Политика конфиденциальности</a>
+        </p>
+        <button type="button" onclick="cook()" class="mod-cookiebar__btn">Принять</button>
+    </div>
     <div class="container">
         <a href="/"><h1 class="logo">ЕДАВОЗ</h1></a>
         <h3 class="container__subtitle">Сервис по доставке еды</h3>
         <div class="container__content">
-            <form action="test.php" class="container__form">
+            <form action="test.php" class="container__form" method="post">
                     <div class="form-row">
                         <div class="form-row__container">
                             <input type="text" class="form-row_info" placeholder="Как Вас зовут? *" />
@@ -75,21 +86,10 @@
                     </span>
                     </div>
                     <div class="form-row__submit">
-                        <button class="form-row__submit--btn">отправить</button>
+                        <button type="submit" class="form-row__submit--btn">отправить</button>
                     </div>
             </form>
         </div>
-    </div>
-    <div class="mod-cookiebar" id="cookie">
-        <p class="mod-cookiebar__text">
-            Продолжая использовать сайт, 
-            вы даете согласие на использование 
-            нами файлов cookie, с целью сбора 
-            статистики посещаемости сайта и персонализации 
-            предложений с учетом ваших интересов. 
-            <a href="./politica.html">Политика конфиденциальности</a>
-        </p>
-        <button type="button" onclick="cook()" class="mod-cookiebar__btn">Принять</button>
     </div>
     <footer class="footer">
         <h3 class="footer__title">edavoz.info</h3>
